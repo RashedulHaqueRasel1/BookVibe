@@ -14,7 +14,7 @@ export default function Nav() {
                          <NavLink to={'/pagesToRead'} className={({isActive}) => isActive ? "font-semibold   bg-green-600" : "font-semibold  "}>Pages to Read</NavLink > 
                     </ul>
                 </div>
-                <NavLink to={'/'} className="text-[#131313] text-2xl">Book Vibe</NavLink>
+                <NavLink to={'/'} className="text-[#131313] font-bold text-2xl">Book Vibe</NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="  px-1 text-center">
@@ -23,7 +23,7 @@ export default function Nav() {
                      <NavLink to={'/pagesToRead'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4" : "font-normal text[#131313]  ml-4"}>Pages to Read</NavLink > 
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end ">
                 <NavLink to={'/'} className="btn bg-[#23BE0A]   px-[25px] text-white rounded-lg  font-semibold   hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ">Sign In</NavLink >
                 <NavLink to={'/'} className="btn bg-[#59C6D2]   px-[25px] text-white rounded-lg  font-semibold    hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ml-4">Sign Up</NavLink >
             </div>
