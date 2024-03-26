@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 export default function Book({ book }) {
 
-    const { bookName, image, author, tags, category, rating, } = book;
+    const {id, bookName, image, author, tags, category, rating, } = book;
 
 
-    // console.log(book)
+    // console.log(bookId)
 
     return (
 
-        <div className=" container mx-auto p-6 rounded-md gap-4   border border-red-500 card bg-cyan-100 shadow-xl">
+        <Link to={`/book/${id}`} className=" container mx-auto p-6 rounded-md gap-4   border border-red-500 card bg-cyan-100 shadow-xl">
             <img src={image} alt="" className="px-5 pt-5" />
             <div className="mt-6 mb-2">
                  <div className='flex'>
@@ -31,7 +32,7 @@ export default function Book({ book }) {
                     <FaRegStar />
                 </div>
             </div>
-        </div>
+        </Link>
 
     )
 }
@@ -45,16 +46,4 @@ Book.propTypes = {
 
 
 
-    //     < div className = "  justify-center  " >
-    // <figure className="">
-    //     <img src= alt="Book" className="rounded-xl" />
-    // </figure>
-//     < div className = "card-body items-center text-end " >
-        
-// //     <p className=''></p>
-// //     <p> By: {author}</p>
-// //     <div className="card-actions">
-// //         <button className="btn btn-primary">Buy Now</button>
-// //     </div>
-// // </div>
-// </div >
+ 
