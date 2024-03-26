@@ -3,6 +3,7 @@ import { BsChevronBarDown } from "react-icons/bs";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadBooks from "../ReadBooks/ReadBooks";
+import WishlistBooks from "../WishlistBooks/WishlistBooks";
 
 
 export default function ListedBooks() {
@@ -33,7 +34,7 @@ export default function ListedBooks() {
           <ReadBooks></ReadBooks>
         </TabPanel>
         <TabPanel>
-          <h2>Any content 2</h2>
+          <WishlistBooks></WishlistBooks>
         </TabPanel>
       </Tabs>
 

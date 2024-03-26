@@ -1,4 +1,11 @@
-import { NavLink, useLoaderData, useParams } from "react-router-dom"
+import {   useLoaderData, useParams } from "react-router-dom"
+import 'react-tabs/style/react-tabs.css';
+import {  saveBlog  } from "../Utilities";
+import { saveBlogWishlist } from "../Utilities/wishlist";
+
+// import 'react-toastify/dist/ReactToastify.css';
+
+ 
 
 export default function BookDetails() {
 
@@ -8,7 +15,19 @@ export default function BookDetails() {
 
     const book = books.find((book) => book.id === idInt)
 
-    console.log(book)
+    // console.log(book)
+
+
+    const handleReadBtn = (e) => {
+        saveBlog(e)
+        // console.log(id)
+    }
+
+    const handleReadWishlist = (e) => {
+        saveBlogWishlist(e)
+        // console.log(id)
+    }
+
 
 
     const { bookName, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = book;
@@ -38,10 +57,11 @@ export default function BookDetails() {
 
                     <div className="flex flex-col mt-4 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
 
-                            <NavLink to={'/'} className="btn bg-[#23BE0A]   px-[25px] text-white rounded-lg  font-semibold   hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ">Read</NavLink >
-                            <NavLink to={'/'} className="btn bg-[#59C6D2]   px-[25px] text-white rounded-lg  font-semibold    hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ml-4">Wishlist</NavLink >
+                            <button  onClick={() => handleReadBtn(book)} className="btn bg-[#23BE0A]   px-[25px] text-white rounded-lg  font-semibold   hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ">Read</button >
+                            <button onClick={() => handleReadWishlist(book)}  className="btn bg-[#59C6D2]   px-[25px] text-white rounded-lg  font-semibold    hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ml-4">Wishlist</button >
  
                     </div>
+                        
                 </div>
             </div>
         </section>
