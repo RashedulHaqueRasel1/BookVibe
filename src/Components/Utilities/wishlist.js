@@ -14,10 +14,10 @@ export const saveBlogWishlist = book => {
     let books = getBooksWishlist()
     const isExist = books.find((b) => b.id === book.id)
     if (isExist) {
-        return toast("Book Already Exit !")
+        return toast.error("Book Already Exit Wishlist!")
     }
     books.push(book)
     localStorage.setItem('wishlist', JSON.stringify(books))
-    toast('book Bookmarked Successfully!')
+    toast.success('book Successfully Added Wishlist !')
  
 }

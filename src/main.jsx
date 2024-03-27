@@ -10,6 +10,7 @@ import Home from './Components/Home/Home';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import PagesToRead from './Components/PagesToRead/PagesToRead';
 import BookDetails from './Components/BookDetails/BookDetails';
+import Error from './Components/Error/Error';
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPages></MainPages>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',

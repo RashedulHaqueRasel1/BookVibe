@@ -14,11 +14,11 @@ export const saveBlog = book => {
     let books = getBooks()
     const isExist = books.find((b) => b.id === book.id)
     if (isExist) {
-        return toast("Book Already Exit !")
+        return toast.error("Book Already Read!")
     }
     books.push(book)
     localStorage.setItem('books', JSON.stringify(books))
-    toast('book Bookmarked Successfully!')
+    toast.success('book Read  Successfully !')
  
 }
 

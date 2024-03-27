@@ -12,7 +12,7 @@ export default function Book({ book }) {
 
     return (
 
-        <Link to={`/book/${id}`} className=" container mx-auto p-6 rounded-md gap-4   border border-red-500 card bg-cyan-100 shadow-xl">
+        <Link to={`/book/${id}`} className=" container mx-auto p-6 rounded-lg  gap-4   border hover:border-[#23BE0A]  card   bg-cyan-100 shadow-xl">
             <img src={image} alt="" className="px-5 pt-5" />
             <div className="mt-6 mb-2">
                  <div className='flex'>
