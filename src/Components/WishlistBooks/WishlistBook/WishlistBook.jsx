@@ -29,9 +29,9 @@ export default function WishlistBook({readBook})  {
 
                             <div className="flex items-center justify-center">
                                 <div className='md:flex mt-2'>
-                                    <span className="text-[#131313] font-medium text-[18px] ">Tag</span>
+                                    <span className="text-[#131313] font-medium text-[18px]  ">Tag</span>
                                     {
-                                        tags.map((tag, inx) => <h2 className='ml-3 text-[#23BE0A]' key={inx}># {tag} </h2>)
+                                        tags.map((tag, inx) => <h2 className='ml-3 text-[#23BE0A]  font-semibold p-2 bg-[#23BE0A] bg-opacity-10 rounded-lg' key={inx}># {tag} </h2>)
                                     }
                                 </div>
 
@@ -53,8 +53,8 @@ export default function WishlistBook({readBook})  {
                             </div>
 
                             <div className="flex mt-7">
-                                <p className="text-[#328EFF] mt-3">Category: <span className="text-[#328EFF]  font-medium text-[16px] ">{category}</span></p>
-                                <p className="ml-8 mt-3">Rating: <span className="text-[#131313] font-medium text-[16px] ">{rating}</span></p>
+                                <p className="text-[#328EFF] mt-3 p-2 bg-[#328EFF] bg-opacity-10 rounded-lg">Category: <span className="text-[#328EFF]  font-medium text-[16px] ">{category}</span></p>
+                                <p className="ml-8 mt-3 p-2 bg-[#FFAC33] text-[#FFAC33] bg-opacity-25 rounded-lg">Rating: <span className="text-[#131313] font-medium text-[16px] ">{rating}</span></p>
                                 <Link to={`/book/${id}`} className="btn bg-[#23BE0A]   px-[25px] text-white rounded-lg  font-semibold    hover:text-black hover:bg-transparent hover:border-[#FF4240] text-[18px] ml-4">View Details</Link>
                             </div>
 

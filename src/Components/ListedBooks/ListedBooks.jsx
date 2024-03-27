@@ -18,7 +18,7 @@ export default function ListedBooks() {
       </div>
 
       <Tabs>
-        <TabList>
+        <TabList className={`font-medium text-xl`}>
           <Tab>Read Books</Tab>
           <Tab>Wishlist Books</Tab>
         </TabList>
