@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function ReadBook({ readBook }) {
 
-    console.log(readBook)
+    // console.log(readBook)
 
     const { bookName,id, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = readBook;
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import WishlistBook from "./WishlistBook/WishlistBook";
-import {   getBooksWishlist } from "../Utilities/wishlist";
+import {  getBooksWishlist  } from "../Utilities";
+// import {   getBooksWishlist } from "../Utilities/wishlist";
 
 export default function WishlistBooks() {
 

@@ -21,6 +21,7 @@ export default function Nav() {
                      <NavLink to={'/'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4 hover:bg-[#23BE0A] hover:text-white" : "font-medium text[#131313]  ml-4" }>Home</NavLink > 
                      <NavLink to={'/listedBooks'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4" : "font-medium text[#131313]  ml-4"}>Listed Books </NavLink > 
                      <NavLink to={'/pagesToRead'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4" : "font-medium text[#131313]  ml-4"}>Pages to Read</NavLink > 
+                     <NavLink to={'/ourGallery'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4" : "font-medium text[#131313]  ml-4"}>Our Gallery</NavLink > 
                      <NavLink to={'/contact'} className={({isActive}) => isActive ? "font-semibold border border-[#23BE0A] text-[#23BE0A]  rounded-md p-2 ml-4" : "font-medium text[#131313]   ml-4"}>Contact Us</NavLink > 
                 </ul>
             </div>

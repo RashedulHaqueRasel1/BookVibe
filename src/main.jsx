@@ -12,6 +12,7 @@ import PagesToRead from './Components/PagesToRead/PagesToRead';
 import BookDetails from './Components/BookDetails/BookDetails';
 import Error from './Components/Error/Error';
 import Contact from './Components/Contact/Contact';
+import OurTeam from './Components/OurTeam/OurTeam';
 
 
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/pagesToRead',
         element: <PagesToRead></PagesToRead>
+      },
+      {
+        path: '/ourGallery',
+        element: <OurTeam></OurTeam>
       },
       {
         path: '/contact',

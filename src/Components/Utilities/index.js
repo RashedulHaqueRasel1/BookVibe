@@ -10,6 +10,20 @@ export const getBooks = () => {
 }
 
 
+
+export const getBooksWishlist = () => {
+    let books = []
+    const storedBooks = localStorage.getItem('wishlist')
+    if (storedBooks) {
+        books = JSON.parse(storedBooks)
+    }
+    return books
+}
+
+
+
+
+
 export const saveBlog = book => {
     let books = getBooks()
     const isExist = books.find((b) => b.id === book.id)
@@ -26,3 +40,22 @@ export const saveBlog = book => {
 
 
 
+export const saveBlogWishlist = book => {
+
+ 
+    let bookss = getBooks()
+    const isExists = bookss.find((b) => b.id === book.id)
+    if (isExists) {
+        return toast.error("Book Already Read!")
+    }
+
+    let books = getBooksWishlist()
+    const isExist = books.find((b) => b.id === book.id)
+    if (isExist) {
+        return toast.error("Book Already Exit Wishlist!")
+    }
+    books.push(book)
+    localStorage.setItem('wishlist', JSON.stringify(books))
+    toast.success('book Successfully Added Wishlist !')
+ 
+}

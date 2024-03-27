@@ -1,9 +1,9 @@
 import {   useLoaderData, useParams } from "react-router-dom"
 import 'react-tabs/style/react-tabs.css';
-import {  saveBlog  } from "../Utilities";
-import { saveBlogWishlist } from "../Utilities/wishlist";
+import {  saveBlog, saveBlogWishlist } from "../Utilities";
+// import { saveBlogWishlist } from "../Utilities/wishlist";
 
-// import 'react-toastify/dist/ReactToastify.css';
+ 
 
  
 
@@ -14,6 +14,8 @@ export default function BookDetails() {
     const idInt = parseInt(id)
 
     const book = books.find((book) => book.id === idInt)
+    
+    const { bookName, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = book;
 
     // console.log(book)
 
@@ -30,7 +32,7 @@ export default function BookDetails() {
 
 
 
-    const { bookName, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = book;
+
 
     return (
         <section className="container mx-auto mt-8">
