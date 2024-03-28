@@ -2,12 +2,13 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { IoMdContacts } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 export default function WishlistBook({readBook})  {
 
     // console.log(readBook)
 
-    const { bookName,id, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = readBook;
+    const { bookName,id, image, author, tags, category, totalPages, publisher, yearOfPublishing, rating } = readBook;
 
 
     return (
@@ -71,4 +72,9 @@ export default function WishlistBook({readBook})  {
 
         </div>
     )
+}
+
+
+WishlistBook.propTypes = {
+    readBook: PropTypes.array
 }

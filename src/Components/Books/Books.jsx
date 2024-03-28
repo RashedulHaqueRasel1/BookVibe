@@ -20,7 +20,7 @@ export default function Books() {
     return (
         <div>
 
-            <h1 className="text-4xl font-bold text-[#131313] text-center mt-28">Books</h1>
+            <h1 className="text-4xl font-bold text-[#131313] text-center mt-24">Books</h1>
 
             <div className="grid justify-center items-center mt-10 grid-cols-1 gap-24 sm:grid-cols-2 lg:grid-cols-3">
                 {

@@ -2,17 +2,19 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoMdContacts } from "react-icons/io";
 import { FaRegFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 export default function ReadBook({ readBook }) {
 
     // console.log(readBook)
 
-    const { bookName,id, image, author, tags, category, review, totalPages, publisher, yearOfPublishing, rating } = readBook;
+    const { bookName, id, image, author, tags, category, totalPages, publisher, yearOfPublishing, rating } = readBook;
 
 
     return (
         <div>
+ 
 
 
             <div className="grid grid-cols-12 gap-6 lg:p-5  mt-6 border bg-cyan-100 shadow-xl  hover:border-[#23BE0A] hover:rounded-lg hover:opacity-90">
@@ -50,7 +52,7 @@ export default function ReadBook({ readBook }) {
                                 <div className="flex items-center ml-6">
                                     <FaRegFileAlt ></FaRegFileAlt>
                                     <p className="ml-2">Page: <span className="text-[#131313] font-medium text-[16px] ">{totalPages}</span></p>
-                                </div> 
+                                </div>
                             </div>
 
                             <div className="flex mt-7">
@@ -72,4 +74,9 @@ export default function ReadBook({ readBook }) {
 
         </div>
     )
+}
+
+
+ReadBook.propTypes = {
+    readBook: PropTypes.object
 }
