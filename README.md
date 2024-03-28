@@ -1,7 +1,7 @@
  
  # MyWebsite
 
-Welcome to MyWebsite! Visit the live site [Click](https://bookvibe-by-rasel.surge.sh/).
+Welcome to MyWebsite! Visit the live site [Surge](https://bookvibe-by-rasel.surge.sh/) / [Vercel](https://book-vibe-theta.vercel.app/).
 
 ## Features and Characteristics
 
