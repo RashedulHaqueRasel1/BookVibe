@@ -29,9 +29,6 @@ To get a local copy up and running, follow these simple steps.
     npm install
    
 3. Live Preview
-To run the project locally and see a live preview:
-
+ To run the project locally and see a live preview:
   ```sh
-  npm run dev
-
- 
+     npm run dev
